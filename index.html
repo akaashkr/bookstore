@@ -3,74 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sPats Bookstore</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo">
-                <a href="#">Bookstore</a>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+    <nav>
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Fiction</a></li>
+              <li><a href="#">Non-fiction</a></li>
+              <li><a href="#">Science</a></li>
             </ul>
-
-        </div>
+          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 
-    <section class="main">
-            <h1>Our Featured Books</h1>
-            <div class="grid">
-                <!-- Book 1 -->
-                <div class="card">
-                    <img src="/WFIP.jpg" alt="The Satanic Verses">
-                    <div class="card-content">
-                        <div class="card-title">The Satanic Verses</div>
-                        <div class="card-author">Salman Rushdie</div>
-                        <div class="card-price">₹1350</div>
-                        <a href="#" class="add-to-cart">Add to Cart</a>
-                    </div>
-                </div>
-    
-                <!-- Book 2 -->
-                <div class="card">
-                    <img src="Alchemist.jpg" alt="The Psychology of Money">
-                    <div class="card-content">
-                        <div class="card-title">The Psychology of Money</div>
-                        <div class="card-author">Morgan Housel</div>
-                        <div class="card-price">₹400</div>
-                        <a href="#" class="add-to-cart">Add to Cart</a>
-                    </div>
-                </div>
-    
-                <!-- Book 3 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/200x250" alt="White Nights">
-                    <div class="card-content">
-                        <div class="card-title">White Nights</div>
-                        <div class="card-author">Fyodor Dostoevsky</div>
-                        <div class="card-price">₹143</div>
-                        <a href="#" class="add-to-cart">Add to Cart</a>
-                    </div>
-                </div>
-    
-                <!-- Book 4 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/200x250" alt="Vagabond">
-                    <div class="card-content">
-                        <div class="card-title">Vagabond (VIZBIG Edition)</div>
-                        <div class="card-author">Takehiko Inoue</div>
-                        <div class="card-price">₹1675</div>
-                        <a href="#" class="add-to-cart">Add to Cart</a>
-                    </div>
-                </div>
+    <main>
+        <section class="book-grid">
+          <div class="book-card">
+            <img src="/Alchemist.jpg" alt="The Alchemist">
+            <h3>The Alchemist</h3>
+            <p class="author">Paulo Coelho</p>
+            <p class="about">The story follows the shepherd boy Santiago</p>
+            <p class="price">₹258</p>
+            <button class="wishlist">Add to Wish List</button>
+            <button class="read-more">Read More</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+          <div class="book-card">
+            <img src="/Ikigai.jpg" alt="Ikigai">
+            <h3>Ikigai</h3>
+            <p class="author">Francesc Miralles</p>
+            <p class="about">Japanese secret to long and happy life</p>
+            <p class="price">₹299</p>
+            <button class="wishlist">Add to Wish List</button>
+            <button class="read-more">Read More</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+          <div class="book-card">
+            <img src="/AtomicHabits.png" alt="Atomic Habits">
+            <h3>Atomic Habits</h3>
+            <p class="author">James Clear</p>
+            <p class="about">An easy and proven way to build good habits</p>
+            <p class="price">₹399</p>
+            <button class="wishlist">Add to Wish List</button>
+            <button class="read-more">Read More</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+            <div class="book-card">
+                <img src="/ThinkAndGrowRich.png" alt="Think and Grow Rich">
+                <h3>Think and Grow Rich</h3>
+                <p class="author">Napoleon Hill</p>
+                <p class="about">The book is a classic of self-help literature</p>
+                <p class="price">₹199</p>
+                <button class="wishlist">Add to Wish List</button>
+                <button class="read-more">Read More</button>
+                <button class="buy-now">Buy Now</button>
             </div>
-    </section>
+
+
+        </section>
+    </main>
 
     <div class="footerContainer">
         <div class="socialIcons">
